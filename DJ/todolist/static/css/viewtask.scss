@@ -1,0 +1,205 @@
+// Display Tasks
+
+.main-task-div {
+    background: linear-gradient(to right, white, rgb(241, 234, 234), rgb(241, 236, 231));
+    height: 15%;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5% 1%;
+    gap: 1vw;
+    scale: 0.9;
+    transition: 0.3s;
+    margin: 2vh 1vw;
+
+    &:hover {
+        cursor: pointer;
+        scale: 1;
+    }
+
+    .category-color {
+        height: 4vh;
+        width: 2.3vw;
+        border-radius: 20px;
+
+    }
+
+    .content {
+        // padding: 0 1%;
+        width: 90%;
+        height: 100%;
+        // border: 1px solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .note {
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+            border: 1px solid;
+            height: 70%;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        h2 {
+            font-family: 'Josefin Sans', sans-serif;
+            letter-spacing: 0.5px;
+            font-size: 2em;
+            // border: 2px solid;
+
+            height: fit-content;
+            width: fit-content;
+            max-width: 25vw;
+            max-height: 10vh;
+            overflow-x: hidden;
+        }
+
+        .dateandtime {
+            width: 25%;
+            height: 5vh;
+            // border: 1px solid;
+            padding: 0 1%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            background: rgba(26, 141, 235, 0.915);
+            border-radius: 5px;
+
+            &:hover {
+                background: rgb(89, 43, 243);
+                color: whitesmoke;
+            }
+
+            div {
+                font-family: monospace;
+                font-weight: bold;
+                font-size: 100%;
+            }
+
+            .category {
+                color: rgb(241, 182, 5);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            }
+        }
+    }
+
+    .flag-comp-update {
+        height: 4vh;
+        width: 27%;
+        // border: 1px solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1vw;
+
+        .flag {
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .tick {
+            color: green;
+        }
+
+        .trash {
+            color: rgb(236, 28, 28);
+        }
+
+        .update {
+            color: rgb(14, 84, 225);
+        }
+
+
+        button {
+            padding: 0 1%;
+            background: transparent;
+            border: none;
+
+            &:hover {
+                border-radius: 50%;
+                background: rgb(241, 222, 222);
+            }
+        }
+
+        .flag {
+            align-self: flex-start;
+            font-size: x-large;
+            cursor: pointer;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        a {
+            i {
+                font-size: 1em;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    font-size: 1.3em;
+                }
+
+                &:active {
+                    scale: 0.9;
+                }
+            }
+
+            .tick {
+                color: green;
+            }
+
+            .dots {
+                align-self: center;
+            }
+        }
+    }
+}
+
+
+
+.alert {
+    animation: alert 1s infinite alternate;
+    transition: 2s;
+}
+
+@keyframes alert {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.over {
+    text-decoration: line-through;
+}
+
+.completed-task {
+    animation: completed-task 0.5s infinite alternate;
+    transition: 2s;
+}
+
+@keyframes completed-task {
+    0% {
+        scale: 0.95;
+    }
+
+    100% {
+        scale: 1;
+    }
+}

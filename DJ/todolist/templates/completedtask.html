@@ -1,0 +1,33 @@
+{% extends 'home.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css\viewtask.css' %}">
+<!-- Display Of All Tasks -->
+<div class="content-div">
+    {% for task in completedtasks %}
+    <!-- Divison Of Main Task Divison -->
+    <div class="main-task-div">
+        <!-- Category Color Of Each pecific Task -->
+        <div class="category-color" id="{{ task.category }}"></div>
+        <div class="content">
+            <!-- Display Of Task Title  -->
+            <h2 id="{{ task.category }}" class="title">{{ task.title }}</h2>
+            <!-- Display Of Task Subtitle -->
+            <!-- Task Category And Deadline -->
+            <div class="dateandtime">
+                <div id="duedate">{{ task.duedate }}</div>
+                <div id="duetime">{{ task.duetime }}</div>
+            </div>
+        </div>
+        <!-- Task Flag Level , Completion Button And Edit ,Delete Button -->
+        <div class="flag-comp-update">
+            <a href="{% url 'deltask' docId=task.docId %}"><i class="fa-solid fa-trash-can trash"></i></a>
+            <a href="#"><i class="fa-solid fa-pen-to-square update"></i></a>
+            <span class="flag">{{ task.flag }}</span>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<script src="{% static 'js\comptask.js' %}"></script>
+{% endblock %}

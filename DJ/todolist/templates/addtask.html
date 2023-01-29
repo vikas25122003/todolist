@@ -1,0 +1,71 @@
+{% extends 'home.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static '\css\addtask.css' %}">
+
+<!-- Modal Content -->
+<div class="main-main">
+    <form method="POST" class="modal-content">
+        {% csrf_token %}
+        <!-- Task Title -->
+        <div class="add-task-div">
+            <label for="taskname">Todo : &nbsp;</label>
+            <input type="text" placeholder="Title" id="taskname" name="title" required>
+        </div>
+
+        <!-- Select Task Category -->
+        <div class="non-title">
+            <div class="category-div">
+                <h1>CATEGORIES</h1>
+                <div class="options-div">
+                    <div class="option">HOME</div>
+                    <div class="option">PERSONAL</div>
+                    <div class="option">WORK</div>
+                    <div class="option">MEETING</div>
+                    <div class="option">EXERCISE</div>
+                    <div class="option">APPOINTMENTS</div>
+                    <div class="option">BILLS</div>
+                    <div class="option">BIRTHDAY</div>
+                    <div class="option">ACCOUNTS</div>
+                    <div class="option">CLASS</div>
+                    <div class="option">MOVIE</div>
+                    <div class="option">OTHERS</div>
+                    <input type="hidden" id="hiddencategory" name="category" required>
+                </div>
+            </div>
+
+            <!-- Select Task Completion Date And Time -->
+            <div class="selectdate-div">
+                <div class="icon-div">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <input type="date" id="myDate" name="date" required>
+                </div>
+                <div class="icon-div">
+                    <i class="fa-regular fa-clock"></i>
+                    <input type="time" id="myDate" name="time" required>
+                </div>
+            </div>
+
+
+            <!-- Task Importance Level -->
+            <div class="importance-level">
+                <h1>FLAG</h1>
+                <span class="highest">10 : Highest</span>
+                <span class="lowest">01 : Lowest</span>
+                <input type="range" max="10" min="0" id="rangeinput" name="flag" required>
+                <span id="selected"></span>
+            </div>
+
+            <!-- Add Note For Task -->
+            <div class="subtitle-div">
+                <h1>Note</h1>
+                <textarea type="research" placeholder="Add Task Note (Optional)" name="note"></textarea>
+            </div>
+        </div>
+        <input type="submit" value="ADD">
+
+    </form>
+</div>
+</div>
+<script src="{% static 'js\addtask.js' %}"></script>
+{% endblock %}

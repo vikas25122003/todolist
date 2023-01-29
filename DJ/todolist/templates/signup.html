@@ -1,0 +1,59 @@
+{% extends 'home.html' %}
+
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static '\css\singnup.css' %}">
+<div class="main-div">
+    <h1>SignUp Now !!!</h1>
+    <form method="POST" class="signup-div">
+        {% csrf_token %}
+        <div class="input-div">
+            <label for="name">Name</label>
+            <div class="icon-and-input">
+                <label for="name" class="icon">
+                    <i class="fa-solid fa-user"></i>
+                </label>
+                <input type="text" placeholder="UserName" id="name" name="username">
+            </div>
+        </div>
+
+        <div class="input-div">
+            <label for="email">Email</label>
+            <div class="icon-and-input">
+                <label for="email" class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </label>
+                <input type="text" placeholder="Email Id" id="email" name="email">
+            </div>
+        </div>
+
+
+        <div class="input-div">
+            <label for="password">Password</label>
+            <div class="icon-and-input">
+                <label for="password" class="icon">
+                    <i class="fa-solid fa-lock"></i>
+                </label>
+                <input type="text" placeholder="password" id="password" name="password">
+            </div>
+        </div>
+
+        <div class="input-div">
+            <label for="repass">Confirm Password</label>
+            <div class="icon-and-input">
+                <label for="repass" class="icon">
+                    <i class="fa-solid fa-key"></i>
+                </label>
+                <input type="text" placeholder="password" id="repass">
+            </div>
+        </div>
+
+
+        <input type="submit" value="SIGN UP">
+
+    </form>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "home.html" %}
+
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static '\css\singnup.css' %}">
+<link rel="stylesheet" href="{% static '\css\login.css' %}">
+
+<div class="main-div loginpage">
+    <h1>Welcome Back . Login </h1>
+
+    <form method="POST" class="signup-div">
+        {% csrf_token %}
+        <div class="input-div">
+            <label for="name">Name</label>
+            <div class="icon-and-input">
+                <label for="name" class="icon">
+                    <i class="fa-solid fa-user"></i>
+                </label>
+                <input type="text" placeholder="UserName or Email" id="name" name="usernameOremail">
+            </div>
+        </div>
+
+        <div class="input-div">
+            <label for="password">Password</label>
+            <div class="icon-and-input">
+                <label for="password" class="icon">
+                    <i class="fa-solid fa-lock"></i>
+                </label>
+                <input type="text" placeholder="password" id="password" name="loginpass">
+            </div>
+        </div>
+
+        <input type="submit" value="LOGIN">
+    </form>
+    <p class="passprompt">{{ prompt }}</p>
+</div>
+
+
+
+
+{% endblock %}

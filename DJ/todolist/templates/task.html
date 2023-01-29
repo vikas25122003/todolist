@@ -1,0 +1,44 @@
+{% extends 'home.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css\task.css' %}">
+<div class="main-div">
+    <!-- Select Each Option Division -->
+    <a href="{% url 'addnewtaskpage' %}">
+        <div class="option-div">
+            <div class="text">
+                <h1>Add Task</h1>
+            </div>
+            <div class="icon"><i class="fa-solid fa-circle-plus"></i></div>
+        </div>
+    </a>
+    <!-- Each Option Divison End -->
+    <a href="{% url 'completedtaskpage' %}">
+        <div class="option-div comp">
+            <div class="text">
+                <h1>Completed</h1>
+            </div>
+            <div class="icon"><i class="fa-solid fa-face-grin-wide"></i></div>
+        </div>
+    </a>
+    <a href="{% url 'viewtaskpage' %}">
+        <div class="option-div">
+            <div class="text">
+                <h1> All Tasks</h1>
+            </div>
+            <div class="icon"><i class="fa-solid fa-list"></i></div>
+        </div>
+    </a>
+    <a href="{% url 'overduetaskpage' %}">
+        <div class="option-div comp">
+            <div class="text">
+                <h1>Overdue</h1>
+            </div>
+            <div class="icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        </div>
+    </a>
+</div>
+
+<script src="{% static 'js\task.js' %}"></script>
+{% endblock %}

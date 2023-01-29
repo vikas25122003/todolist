@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap");
+.main-div {
+  background: url(../images/task4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2% 2%;
+}
+.main-div a {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.main-div a .option-div {
+  height: 36.5vh;
+  width: 35vw;
+  border: 2px solid black;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 15px 25px 25px rgb(69, 66, 66);
+  border-radius: 20px;
+}
+.main-div a .option-div:hover {
+  cursor: pointer;
+  outline: 5px solid white;
+}
+.main-div a .option-div:active {
+  scale: 0.9;
+}
+.main-div a .option-div .text,
+.main-div a .option-div .icon {
+  padding: 0 2%;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main-div a .option-div .text h1,
+.main-div a .option-div .icon h1 {
+  font-family: "Kalam", cursive;
+  font-size: 340%;
+  transition: 0.3s;
+}
+.main-div a .option-div .text h1:hover,
+.main-div a .option-div .icon h1:hover {
+  cursor: pointer;
+  scale: 0.9;
+}
+.main-div a .option-div .text #viwalltxt,
+.main-div a .option-div .icon #viwalltxt {
+  font-size: 210%;
+  letter-spacing: 0.5vw;
+}
+.main-div a .option-div .icon {
+  font-size: 8rem;
+  align-items: center;
+  justify-content: center;
+}
+.main-div a .option-div .icon i {
+  transition: 0.3s;
+}
+.main-div a .option-div .icon i:hover {
+  cursor: pointer;
+  scale: 0.9;
+}
+.main-div a .comp {
+  flex-direction: column;
+}
+.main-div a .comp .text,
+.main-div a .comp .icon {
+  width: 100%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=task.css.map */

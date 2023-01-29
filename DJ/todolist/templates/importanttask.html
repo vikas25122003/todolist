@@ -1,0 +1,30 @@
+{% extends 'task.html' %}
+
+{% block data %}
+{% for task in taskdata %}
+<!-- Divison Of Main Task Divison -->
+<div class="main-task-div">
+    <!-- Category Color Of Each pecific Task -->
+    <div class="category-color" id="{{ task.category }}"></div>
+    <div class="content">
+        <!-- Display Of Task Title  -->
+        <h2 id="{{ task.category }}" class="title">{{ task.title }}</h2>
+        <!-- Display Of Task Subtitle -->
+        <span class="note">{{ task.Note }}</span>
+        <!-- Task Category And Deadline -->
+        <div class="dateandtime">
+            <div class="category">{{ task.category }}</div>
+            <div>BEFORE : </div>
+            <div id="duedate">{{ task.duedate }}</div>
+            <div id="duetime">{{ task.duetime }}</div>
+        </div>
+    </div>
+    <!-- Task Flag Level , Completion Button And Edit ,Delete Button -->
+    <div class="flag-comp-update">
+        <div class="flag">{{ task.flag }}</div>
+        <i class="fa-solid fa-check tick"></i>
+        <i class="fa-solid fa-ellipsis-vertical dots"></i>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}

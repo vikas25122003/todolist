@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap");
+.main-div {
+  background: url(../images/sup2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 40%;
+}
+.main-div h1 {
+  font-family: "Yeon Sung", cursive;
+  text-align: center;
+  background: -webkit-linear-gradient(rgb(191, 244, 1), rgb(229, 169, 5));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s;
+  font-size: 5em;
+}
+
+.signup-div {
+  background: url(../images/sg2.jpg);
+  background-size: 120%;
+  background-position: 90% 100%;
+  background-repeat: no-repeat;
+  padding: 0 2%;
+  height: 55vh;
+  width: 50vw;
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 10px 10px 30px rgb(237, 207, 15);
+}
+.signup-div input[type=submit] {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 10px;
+  height: 7vh;
+  width: 10vw;
+  font-size: x-large;
+  color: rgb(12, 16, 230);
+  font-weight: bold;
+  margin-left: 38%;
+  transition: 0.3s;
+  scale: 0.9;
+}
+.signup-div input[type=submit]:hover {
+  scale: 1;
+  background: rgb(232, 232, 89);
+}
+.signup-div input[type=submit]:active {
+  scale: 0.8;
+}
+.signup-div .input-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 20vw;
+}
+.signup-div .input-div label {
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0.5vh 0;
+  font-family: monospace;
+  color: white;
+  font-size: x-large;
+  transition: 0.3s;
+}
+.signup-div .input-div label:hover {
+  color: rgb(23, 214, 23);
+}
+.signup-div .input-div .icon-and-input {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.signup-div .input-div .icon-and-input .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 7vh;
+  background: white;
+  font-size: 1.5em;
+  color: rgb(195, 177, 177);
+  padding: 3%;
+  transition: 0.3s;
+}
+.signup-div .input-div .icon-and-input .icon:hover {
+  color: rgb(101, 20, 232);
+}
+.signup-div .input-div input {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 1em;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 7vh;
+  width: 17vw;
+  font-size: larger;
+}
+.signup-div .input-div input:focus {
+  border: 3px solid rgb(246, 234, 2);
+  border-left: none;
+  box-shadow: inset 10px 10px 50px green;
+}/*# sourceMappingURL=singnup.css.map */

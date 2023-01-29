@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-div {
+  background: url(../images/homebg5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 90vh;
+  width: 100vw;
+}
+.main-div p {
+  margin-top: 30.8vh;
+  font-family: "Satisfy", cursive;
+  font-size: 5em;
+}
+.main-div .usname {
+  font-family: monospace;
+  margin-top: 33vh;
+  margin-left: 5vw;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100vw;
+  padding: 0 10px;
+}
+.nav-bar .logotext {
+  font-family: "Lobster", cursive;
+  margin-left: 2vw;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.3em;
+  justify-content: center;
+  height: 100%;
+  width: 12vw;
+  font-size: 2rem;
+}
+.nav-bar .icons-div {
+  margin-left: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 40vw;
+}
+.nav-bar .icons {
+  cursor: pointer;
+  padding: 5px 10px;
+  height: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.3s;
+}
+.nav-bar .icons:hover {
+  box-shadow: 5px 5px 10px rgb(236, 162, 65);
+  border: 2px solid rgb(51, 51, 240);
+  border-radius: 5px;
+}
+.nav-bar .icons:active {
+  background: aquamarine;
+}
+.nav-bar .icons input[type=search] {
+  width: 20vw;
+}
+.nav-bar .icons a {
+  letter-spacing: 2px;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+.nav-bar .icons label {
+  font-size: larger;
+}
+.nav-bar .icons input {
+  background: transparent;
+  border: none;
+  outline: none;
+  height: 8vh;
+  width: 11vw;
+  font-size: large;
+}
+
+.signupbar {
+  padding: 3px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 5vw;
+  width: 20vw;
+  height: 100%;
+}
+.signupbar .login {
+  background: rgb(189, 238, 92);
+}
+.signupbar .login:hover {
+  background: rgb(151, 223, 8);
+  box-shadow: inset 2px 2px 10px rgb(10, 241, 87);
+}
+.signupbar .signup {
+  background: rgb(234, 183, 138);
+}
+.signupbar .signup:hover {
+  box-shadow: inset 2px 2px 20px rgb(242, 234, 5);
+  background: rgb(234, 140, 58);
+}
+.signupbar .login,
+.signupbar .signup {
+  scale: 0.9;
+  cursor: pointer;
+  border-radius: 7px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  height: 90%;
+  width: 45%;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.signupbar .login:active,
+.signupbar .signup:active {
+  scale: 1;
+}
+.signupbar .login a,
+.signupbar .signup a {
+  letter-spacing: 2px;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+a:visited {
+  color: black;
+}/*# sourceMappingURL=home.css.map */

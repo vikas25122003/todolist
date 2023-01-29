@@ -1,0 +1,186 @@
+.main-task-div {
+  background: linear-gradient(to right, white, rgb(241, 234, 234), rgb(241, 236, 231));
+  height: 15%;
+  width: 50%;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5% 1%;
+  gap: 1vw;
+  scale: 0.9;
+  transition: 0.3s;
+  margin: 2vh 1vw;
+}
+.main-task-div:hover {
+  cursor: pointer;
+  scale: 1;
+}
+.main-task-div .category-color {
+  height: 4vh;
+  width: 2.3vw;
+  border-radius: 20px;
+}
+.main-task-div .content {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-task-div .content .note {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  border: 1px solid;
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main-task-div .content h2 {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 2em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 25vw;
+  max-height: 10vh;
+  overflow-x: hidden;
+}
+.main-task-div .content .dateandtime {
+  width: 25%;
+  height: 5vh;
+  padding: 0 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background: rgba(26, 141, 235, 0.915);
+  border-radius: 5px;
+}
+.main-task-div .content .dateandtime:hover {
+  background: rgb(89, 43, 243);
+  color: whitesmoke;
+}
+.main-task-div .content .dateandtime div {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 100%;
+}
+.main-task-div .content .dateandtime .category {
+  color: rgb(241, 182, 5);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-task-div .flag-comp-update {
+  height: 4vh;
+  width: 27%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1vw;
+}
+.main-task-div .flag-comp-update .flag {
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-task-div .flag-comp-update .tick {
+  color: green;
+}
+.main-task-div .flag-comp-update .trash {
+  color: rgb(236, 28, 28);
+}
+.main-task-div .flag-comp-update .update {
+  color: rgb(14, 84, 225);
+}
+.main-task-div .flag-comp-update button {
+  padding: 0 1%;
+  background: transparent;
+  border: none;
+}
+.main-task-div .flag-comp-update button:hover {
+  border-radius: 50%;
+  background: rgb(241, 222, 222);
+}
+.main-task-div .flag-comp-update .flag {
+  align-self: flex-start;
+  font-size: x-large;
+  cursor: pointer;
+}
+.main-task-div .flag-comp-update .flag:hover {
+  cursor: pointer;
+}
+.main-task-div .flag-comp-update a i {
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.main-task-div .flag-comp-update a i:hover {
+  font-size: 1.3em;
+}
+.main-task-div .flag-comp-update a i:active {
+  scale: 0.9;
+}
+.main-task-div .flag-comp-update a .tick {
+  color: green;
+}
+.main-task-div .flag-comp-update a .dots {
+  align-self: center;
+}
+
+.alert {
+  -webkit-animation: alert 1s infinite alternate;
+          animation: alert 1s infinite alternate;
+  transition: 2s;
+}
+
+@-webkit-keyframes alert {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes alert {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.over {
+  text-decoration: line-through;
+}
+
+.completed-task {
+  -webkit-animation: completed-task 0.5s infinite alternate;
+          animation: completed-task 0.5s infinite alternate;
+  transition: 2s;
+}
+
+@-webkit-keyframes completed-task {
+  0% {
+    scale: 0.95;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes completed-task {
+  0% {
+    scale: 0.95;
+  }
+  100% {
+    scale: 1;
+  }
+}/*# sourceMappingURL=viewtask.css.map */

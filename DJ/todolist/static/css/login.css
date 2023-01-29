@@ -1,0 +1,42 @@
+h1 {
+  font-family: "Yeon Sung", cursive;
+  text-align: center;
+  background: -webkit-linear-gradient(rgb(191, 244, 1), rgb(229, 169, 5));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s;
+  font-size: 5em;
+}
+
+.loginpage {
+  background: url(../images/log2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.signup-div {
+  background: url(../images/logdiv);
+  box-shadow: 10px 20px 20px red;
+  flex-direction: column;
+  width: 30vw;
+  height: 55vh;
+  align-items: center;
+  justify-content: center;
+  gap: 7vh;
+  border-radius: 10px;
+}
+.signup-div input[type=submit] {
+  margin: 0 0;
+}
+
+.main-div .passprompt {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0;
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}/*# sourceMappingURL=login.css.map */
